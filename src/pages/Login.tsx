@@ -104,14 +104,14 @@ export default function Login() {
           </button>
         </form>
 
-        <div className="mt-8 border-t pt-6">
+{/*         <div className="mt-8 border-t pt-6">
           <div className="text-sm text-gray-600">
             <h3 className="font-medium mb-2">Demo Accounts:</h3>
             <p><strong>Admin:</strong> admin@company.com / admin123</p>
             <p><strong>Employee:</strong> john@company.com / password123</p>
             <p><strong>Specialist:</strong> jane@company.com / password123</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
