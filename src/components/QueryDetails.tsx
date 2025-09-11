@@ -181,7 +181,7 @@ export default function QueryDetails() {
                     <div className="flex items-center space-x-2">
                       <FiUser className={theme === 'dark' ? 'text-gray-400' : 'text-gray-500'} />
                       <span className={theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}>
-                        {query.creator?.name || 'N/A'}
+                        {query?.creator?.name || 'N/A'}
                       </span>
                     </div>
                   </div>
@@ -195,7 +195,7 @@ export default function QueryDetails() {
                     <div className="flex items-center space-x-2">
                       <FiUser className={theme === 'dark' ? 'text-gray-400' : 'text-gray-500'} />
                       <span className={theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}>
-                        {query.specialist.name || 'Unassigned'}
+                        {query?.specialist?.name || 'Unassigned'}
                       </span>
                     </div>
                   </div>
