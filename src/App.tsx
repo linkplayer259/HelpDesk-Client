@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import EmployeeDashboard from './pages/Employee/Dashboard';
 import EmployeeAddQuery from './pages/Employee/AddQuery';
 import SpecialistDashboard from './pages/Specialist/Dashboard';
+import SpecialistQueries from './pages/Specialist/Queries';
 import AdminDashboard from './pages/Admin/Dashboard';
 import AdminUsers from './pages/Admin/Users';
 import AdminEmployees from './pages/Admin/Employees';
@@ -47,6 +48,7 @@ function AppRoutes() {
     specialist: (
       <Routes>
         <Route path="/specialist/dashboard" element={<SpecialistDashboard />} />
+        <Route path="/specialist/queries" element={<SpecialistQueries />} />
         <Route path="/specialist/query/:id" element={<QueryDetails />} />
         <Route path="*" element={<Navigate to="/specialist/dashboard" replace />} />
       </Routes>

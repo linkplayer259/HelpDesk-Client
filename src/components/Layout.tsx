@@ -37,6 +37,7 @@ export default function Layout({ children, theme = 'light' }: LayoutProps) {
       case 'specialist':
         return [
           { path: '/specialist/dashboard', icon: FiHome, label: 'Dashboard' },
+          { path: '/specialist/queries', icon: FiList, label: 'My Queries' },
         ];
       case 'admin':
         return [
