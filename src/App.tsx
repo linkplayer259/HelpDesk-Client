@@ -15,6 +15,9 @@ import AdminQueries from './pages/Admin/Queries';
 import AdminQueryTypes from './pages/Admin/QueryTypes';
 import AdminSettings from './pages/Admin/Settings';
 import QueryDetails from './components/QueryDetails';
+import EmployeeMyQueries from './pages/Employee/MyQueries';
+import EmployeeSpecialists from './pages/Employee/Specialists';
+import SpecialistEmployees from './pages/Specialist/Employees';
 
 function AppRoutes() {
   const { user, loading } = useAuth();
