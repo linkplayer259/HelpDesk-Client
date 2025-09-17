@@ -40,7 +40,9 @@ function AppRoutes() {
     employee: (
       <Routes>
         <Route path="/employee/dashboard" element={<EmployeeDashboard />} />
+        <Route path="/employee/my-queries" element={<EmployeeMyQueries />} />
         <Route path="/employee/add-query" element={<EmployeeAddQuery />} />
+        <Route path="/employee/specialists" element={<EmployeeSpecialists />} />
         <Route path="/employee/query/:id" element={<QueryDetails />} />
         <Route path="*" element={<Navigate to="/employee/dashboard" replace />} />
       </Routes>
@@ -49,6 +51,7 @@ function AppRoutes() {
       <Routes>
         <Route path="/specialist/dashboard" element={<SpecialistDashboard />} />
         <Route path="/specialist/queries" element={<SpecialistQueries />} />
+        <Route path="/specialist/employees" element={<SpecialistEmployees />} />
         <Route path="/specialist/query/:id" element={<QueryDetails />} />
         <Route path="*" element={<Navigate to="/specialist/dashboard" replace />} />
       </Routes>

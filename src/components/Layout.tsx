@@ -32,12 +32,15 @@ export default function Layout({ children, theme = 'light' }: LayoutProps) {
       case 'employee':
         return [
           { path: '/employee/dashboard', icon: FiHome, label: 'Dashboard' },
+          { path: '/employee/my-queries', icon: FiList, label: 'My Queries' },
           { path: '/employee/add-query', icon: FiPlus, label: 'Add Query' },
+          { path: '/employee/specialists', icon: FiUserCheck, label: 'Specialists' },
         ];
       case 'specialist':
         return [
           { path: '/specialist/dashboard', icon: FiHome, label: 'Dashboard' },
           { path: '/specialist/queries', icon: FiList, label: 'My Queries' },
+          { path: '/specialist/employees', icon: FiUser, label: 'Employees' },
         ];
       case 'admin':
         return [
